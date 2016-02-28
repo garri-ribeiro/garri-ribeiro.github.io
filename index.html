@@ -1,1 +1,125 @@
-Hello World
+<!DOCTYPE html>
+<hmtl>
+
+	<head>
+		<title>Gabriel Ribeiro</title>
+
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="css/elastic_grid.min.css" rel="stylesheet" type="text/css"/> 
+		<link href="css/hover.css" rel="stylesheet" media="all">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/classie.js"></script>
+		<script type="text/javascript" src="js/elastic_grid.min.js"></script>
+		<script type="text/javascript">
+	  	 	$(function(){
+	        $("#elastic_grid").elastic_grid({
+	            'showAllText' : 'All',
+	            'items' :
+	            [
+	                {
+	                    'title'         : 'Title #1',
+	                    'description'   : ' Description text here',
+	                    'thumbnail'     : ['images/small/1.jpg', 'images/small/2.jpg'],
+	                    'large'         : ['images/large/1.jpg', 'images/large/2.jpg'],
+	                    'button_list'   :
+	                    [
+	                        { 'title':'Demo', 'url' : 'http://bonchen.net/' },
+	                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}
+	                    ],
+	                    'tags'          : ['']
+	                },
+	                {
+	                    'title'         : 'Title #2',
+	                    'description'   : 'Description text here',
+	                    'thumbnail'     : ['images/small/4.jpg', 'images/small/5.jpg'],
+	                    'large'         : ['images/large/4.jpg', 'images/large/5.jpg'],
+	                    'button_list'   :
+	                    [
+	                        { 'title':'Demo', 'url' : 'http://bonchen.net/' },
+	                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}
+	                    ],
+	                    'tags'          : ['']
+	                },                {
+	                    'title'         : 'Title #3',
+	                    'description'   : 'Description text here',
+	                    'thumbnail'     : ['images/small/15.jpg', 'images/small/2.jpg'],
+	                    'large'         : ['images/large/15.jpg', 'images/large/2.jpg'],
+	                    'button_list'   :
+	                    [
+	                        { 'title':'Demo', 'url' : 'http://bonchen.net/' },
+	                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}
+	                    ],
+	                    'tags'          : ['']
+	                }
+
+	            ]
+	        });
+	    });
+</script>
+
+
+
+	</head>
+	<body>
+		<div id="geral">
+			<div id="topo">
+				
+				<nav id="menu">
+					<ul>
+						<li><a href="#sobre">Sobre</a></li>
+						<li><a href="#portifolio">Portifolio</a></li>
+						<li><a href="#logo"><div id="logo"><header>Gabriel Ribeiro</header></div></a></li>
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="#contato">Contato</a></li>
+					</ul>
+
+				</nav>
+				
+			</div>
+
+			
+			<div id="home">
+				
+			</div>
+
+			<div name="sobre" id="sobre">
+				<div class="titulo">Sobre Mim</div>
+			</div>
+			
+			
+			<div name="portifolio" id="portifolio">
+				<div class="titulo">Meu Projetos</div>
+				<div id="elastic_grid"></div>
+			</div>
+
+			
+			<div name="blog" id="blog">
+				<div id="centralizar">
+					<a href="#" class="btblog hvr-ripple-out ">BLOG</a>
+					<a href="#" class="btblog hvr-ripple-out ">IMPREVISTO</a>
+					
+				</div>
+					
+			</div>
+
+
+			<div name="contato" id="contato">
+			<div class="titulo">CONTATO</div>
+			</div>
+
+		</div>
+
+
+		<div id="rodape"></div>
+			
+
+		
+	</body>
+</html>

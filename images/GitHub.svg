@@ -1,0 +1,41 @@
+<svg id="github" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="106" height="106" viewBox="0 0 106 106">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #dedede;
+      }
+
+      .cls-1 {
+        fill-opacity: 0;
+        stroke: #dedede;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="4" y="4" width="99" height="100" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="2.5" dy="4.33" in="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood result="flood" flood-opacity="0.1"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="24.219" y="24" width="59.781" height="64" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="2.5" dy="4.33" in="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood result="flood" flood-opacity="0.1"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g style="fill: #dedede; filter: url(#filter)">
+    <circle id="Shape_8_copy_28" data-name="Shape 8 copy 28" class="cls-1" cx="52" cy="52" r="48" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#Shape_8_copy_28" style="stroke: #dedede; filter: none; fill: none"/>
+  <path class="cls-2" d="M80.372,50.621c-0.842,9.4-7.186,16.109-20.166,17.223A9.41,9.41,0,0,1,63.268,74.8V84H42.227V77.251c-0.92.192-8.322,2.138-11.779-3.656-0.582-1-1.527-4.5-4.078-6.441-0.09-.077-1.975-1.034-2.148-1.975a0.554,0.554,0,0,1,.307-0.474c0.194-.071,3.3-1.339,6.752,3.026,1.043,1.461,3.4,7.066,11.631,3.6a0.672,0.672,0,0,1,.481-0.315,9.459,9.459,0,0,1,2.251-3.155c-11.882-1.532-17.345-6.2-19.058-16.478-1.085-7.114,1-13.027,4.136-15.946-0.476-.621-2.04-5.82.392-11.318,2.634-.526,7.47,1.358,11.717,4.4,5.993-2.155,17.244-1.594,21.27,0,1.912-1.575,8.746-5.253,11.678-4.395,0.862,2.182,2.1,7.471.387,11.327C79.984,39.368,81.061,44.418,80.372,50.621Z"/>
+</svg>

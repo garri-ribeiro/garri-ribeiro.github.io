@@ -7,117 +7,146 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<link href="css/elastic_grid.min.css" rel="stylesheet" type="text/css"/> 
-		<link href="css/hover.css" rel="stylesheet" media="all">
+		
+		<!-- CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet"> 
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 
-		
+		<!-- JAVASCRIPT -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="js/modernizr.custom.js"></script>
-		<script src="js/classie.js"></script>
-		<script type="text/javascript" src="js/elastic_grid.min.js"></script>
 		<script type="text/javascript">
-	  	 	$(function(){
-	        $("#elastic_grid").elastic_grid({
-	            'showAllText' : 'All',
-	            'items' :
-	            [
-	                {
-	                    'title'         : 'Title #1',
-	                    'description'   : ' Description text here',
-	                    'thumbnail'     : ['images/small/1.jpg', 'images/small/2.jpg'],
-	                    'large'         : ['images/large/1.jpg', 'images/large/2.jpg'],
-	                    'button_list'   :
-	                    [
-	                        { 'title':'Demo', 'url' : 'http://bonchen.net/' },
-	                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}
-	                    ],
-	                    'tags'          : ['']
-	                },
-	                {
-	                    'title'         : 'Title #2',
-	                    'description'   : 'Description text here',
-	                    'thumbnail'     : ['images/small/4.jpg', 'images/small/5.jpg'],
-	                    'large'         : ['images/large/4.jpg', 'images/large/5.jpg'],
-	                    'button_list'   :
-	                    [
-	                        { 'title':'Demo', 'url' : 'http://bonchen.net/' },
-	                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}
-	                    ],
-	                    'tags'          : ['']
-	                },                {
-	                    'title'         : 'Title #3',
-	                    'description'   : 'Description text here',
-	                    'thumbnail'     : ['images/small/15.jpg', 'images/small/2.jpg'],
-	                    'large'         : ['images/large/15.jpg', 'images/large/2.jpg'],
-	                    'button_list'   :
-	                    [
-	                        { 'title':'Demo', 'url' : 'http://bonchen.net/' },
-	                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}
-	                    ],
-	                    'tags'          : ['']
-	                }
 
-	            ]
-	        });
-	    });
-</script>
+			$(document).ready(function() {
+				
+			    $('.github').click(function () {
+			        $('.email').animate({
+			            width: '200px'
+			        }, 'slow');
+			       
+			    });
+
+			});
+
+			</script>
 
 
 
 	</head>
+
 	<body>
 		<div id="geral">
-			<div id="topo">
-				
+
+			<header>				
 				<nav id="menu">
 					<ul>
-						<li><a href="#sobre">Sobre</a></li>
-						<li><a href="#portifolio">Portifolio</a></li>
-						<li><a href="#logo"><div id="logo"><header>Gabriel Ribeiro</header></div></a></li>
-						<li><a href="#blog">Blog</a></li>
-						<li><a href="#contato">Contato</a></li>
+						<li><a href="#sobre-anchor">Sobre</a></li>
+						<li class="risco"></li>
+						<li><a href="#portifolio-anchor">Portifolio</a></li>
+						<li><a href="#geral"><div id="logo">Gabriel Ribeiro</div></a></li>
+						<li><a href="#blog-anchor">Blog</a></li>
+						<li class="risco"></li>
+						<li><a href="#contato-anchor">Contato</a></li>
 					</ul>
 
 				</nav>
-				
-			</div>
+			</header>
 
 			
 			<div id="home">
 				
+				<div class="hello1">Hello!</div>
+				<div class="hello">Hello!</div>]
+				
+				<div class="subtitle">I'm a web developer</div>
+				<div class="subtitle1">I'm a web developer</div>
+				
 			</div>
-
+			
+			<div class="anchor" id="sobre-anchor"></div>
 			<div name="sobre" id="sobre">
+			
 				<div class="titulo">Sobre Mim</div>
+				<div class="container">
+					<div class="row">				
+
+						<div class="col-md-8 content-sobre">
+							<h3>Jovem sonhador !</h3>							
+								<div class="text"> <p>Olá, meu nome é Gabriel Ribeiro da Silva, atualmente estou cursando Sistemas de Informação na USP. Gosto de praticar esportes para sentir mais saudável mas também de comer para conhecer novas culturas pelo paladar, ah também viajar por diferentes países também está na minha lista de projetos.</p>
+								<p><b>Aspirante em desenvolvimento web!</b> Minhas áreas preferidas são design e programação, eu gosto de usar minha criatividade para criar interfaces bonitas e com boa usabilidade e usar o meu raciocinio lógico para planejar tarefas. </p>
+
+								</div>							
+						</div>
+
+						<div class="col-md-4">
+							<img src="images/perfil.png" alt="" class="perfil-sobre img-responsive">
+						</div>
+					</div>
+				</div>
 			</div>
 			
-			
+			<div class="anchor" id="portifolio-anchor"></div>
 			<div name="portifolio" id="portifolio">
-				<div class="titulo">Meu Projetos</div>
-				<div id="elastic_grid"></div>
+			
+				<div class="titulo">Projetos</div>
+				<div class="container">
+				<div class="col-md-4">
+					<div class="board">
+						<a href="#"><img src="images/MeGuia.png" class="img-responsive" alt=""></a>
+					</div>
+				</div>
+					<div class="col-md-4">
+					<div class="board">
+						<a href="#"><img src="images/YouCoffe.png" class="img-responsive" alt=""></a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="board">
+						<a href="#"><img src="images/More.png" class="img-responsive" alt=""></a>
+					</div>
+				</div>
+					
+				</div>
+				
+
 			</div>
 
-			
+			<div class="anchor" id="blog-anchor"></div>
 			<div name="blog" id="blog">
+				<div class="titulo">BLOG</div>
 				<div id="centralizar">
-					<a href="#" class="btblog hvr-ripple-out ">BLOG</a>
-					<a href="#" class="btblog hvr-ripple-out ">IMPREVISTO</a>
-					
+					<div class="soon">SOON</div>					
 				</div>
 					
 			</div>
-
-
+			
+			<div class="anchor" id="contato-anchor"></div>
 			<div name="contato" id="contato">
-			<div class="titulo">CONTATO</div>
+				<div class="titulo">CONTATO</div>
+				<!-- <div class="row">
+					<div class="centralizar">
+					<input type="text" class="send-me" placeholder="Entre em contato">
+					</div>
+				</div>
+				<div class="row">
+					<div class="centralizar">
+					<button class="col-md-12 btn btn-send">Enviar</button>
+					</div>
+				</div> -->
+				<div class="row centralizar">
+					<div class="social-medias">
+					<!--<button class="oi">OI</button>-->
+						<a href="https://www.facebook.com/gabriel.ribeiroO.95" target="blank"><img src="images/Email.svg" alt=""></a>
+						<a href="https://br.pinterest.com/gabrielgarri/" target="blank"><img src="images/Pinterest.svg" alt=""></a>
+						<a href="https://github.com/garri-ribeiro" target="blank"><img src="images/GitHub.svg" alt=""></a>
+						<a href="https://www.linkedin.com/in/gabriel-ribeiro-924b37b0?trk=nav_responsive_tab_profile" target="blank"><img src="images/Linkedin.svg" alt=""></a>
+					</div>
+				</div>
 			</div>
 
 		</div>
 
 
-		<div id="rodape"></div>
+		<footer></footer>
 			
 
 		

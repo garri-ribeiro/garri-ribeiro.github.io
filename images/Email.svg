@@ -1,0 +1,41 @@
+<svg id="email" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="106" height="106" viewBox="0 0 106 106">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #dedede;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill-opacity: 0;
+        stroke: #dedede;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="22.563" y="22" width="61.438" height="64" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="2.5" dy="4.33" in="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood result="flood" flood-opacity="0.1"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="4" y="4" width="99" height="100" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="2.5" dy="4.33" in="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood result="flood" flood-opacity="0.1"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="cls-1" d="M56.36,51.476c-0.776,5-4.137,9.049-7.326,9.049-2.844,0-4.309-2.068-4.309-5.343,0-6.636,4.482-12.239,10.17-12.239a10.594,10.594,0,0,1,2.672.345ZM63.685,73.97a29.219,29.219,0,0,1-12.5,2.672c-12.842,0-22.063-8.187-22.063-22.58,0-16.461,11.549-26.8,24.735-26.8,13.359,0,20.6,8.7,20.6,19.909,0,9.911-4.654,14.651-8.36,14.565-2.413-.086-3.017-2.413-2.155-7.5L66.529,38.29c-2.155-1.207-6.464-2.155-10.256-2.155-12.411,0-20.167,9.566-20.167,20.081,0,7.067,4.051,11.2,9.653,11.2,4.568,0,8.446-2.241,11.118-6.636h0.172c0.431,4.568,3.361,6.636,7.412,6.636,9.308,0,16.375-7.929,16.375-20.512C80.836,32.429,69.977,22,54.808,22,35.33,22,22.575,37.255,22.575,54.837c0,16.892,12.583,27.148,26.89,27.148,6.119,0,10.6-.69,15.772-3.1Z"/>
+  <g style="fill: #dedede; filter: url(#filter-2)">
+    <circle id="Shape_8_copy_28" data-name="Shape 8 copy 28" class="cls-2" cx="52" cy="52" r="48" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#Shape_8_copy_28" style="stroke: #dedede; filter: none; fill: none"/>
+</svg>

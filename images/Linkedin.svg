@@ -1,0 +1,41 @@
+<svg id="linkedin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="106" height="106" viewBox="0 0 106 106">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #dedede;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill-opacity: 0;
+        stroke: #dedede;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="24.969" y="27" width="58.031" height="55" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="2.5" dy="4.33" in="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood result="flood" flood-opacity="0.1"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="4" y="4" width="99" height="100" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="2.5" dy="4.33" in="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood result="flood" flood-opacity="0.1"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="cls-1" d="M25.019,45.036V78.01H36.956V45.036H25.019ZM30.969,27a6,6,0,1,0,6,6A6,6,0,0,0,30.969,27ZM79.075,56.763c0-5.936-4.036-11.683-13.229-11.683-4.632,0-8.071.217-10.887,3.644V44.96H43.08V78.012H55.031V56.339S54.969,52.523,61,52.523c6.319-.009,6.069,3.383,6.069,8.2v17.29H79.075V56.763Z"/>
+  <g style="fill: #dedede; filter: url(#filter-2)">
+    <circle id="Shape_8_copy_28" data-name="Shape 8 copy 28" class="cls-2" cx="52" cy="52" r="48" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#Shape_8_copy_28" style="stroke: #dedede; filter: none; fill: none"/>
+</svg>

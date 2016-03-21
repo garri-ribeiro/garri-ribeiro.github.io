@@ -4,6 +4,24 @@
       src: url("../fonts/Infinity.ttf") format("truetype");
 
       }
+@font-face {
+
+      font-family: "Open Sans";
+      src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+
+      }
+ @font-face {
+
+      font-family: "Ikaros";
+      src: url("../fonts/Ikaros.otf") format("truetype");
+
+}
+ @font-face {
+
+      font-family: "Debby";
+      src: url("../fonts/Debby.ttf") format("truetype");
+
+}
 
 a { text-decoration:none;}
 #geral {
@@ -11,48 +29,50 @@ a { text-decoration:none;}
 	height: 100%;
 	width: 100%;
 }
+.risco {
+	width: 1px;
+	height: 40px;
+	background-color: #dedede;
+}
 
-#topo {
-	position: absolute;
+header {
+	position: fixed;
 	width: 100%;
-	height: 130px;
+	height: 102px;
+	z-index: 1;
 	background-color: #2e51a7;
 	border-bottom: 5px solid black;
 	border-color: #3c3c3c;
 }
 #logo {
-	width: 435px;
-	height: 84px;
-	background-color: #dedede;
-	
+	width: 350px;
+	height: 75px;
+	font-family: "Ikaros";
+	font-size: 46px;
+	color: #2e51a7;
+	background-color: #dedede;	
 	border-bottom: 6px solid ;
 	border-top: 3px solid ;
 	border-left: 4px solid ;
 	border-right: 4px solid ;
 	border-color: #3c3c3c;
 }
-header{
- text-align: center;
- }
- 
- #menu  {
+#menu  {
   	padding: 0px;
   	margin: 0px;
   	list-style:none;
   	text-align: center;
-
-
- 	
+	
  }
  #menu ul li { 
- 	margin-top: 20px;
+ 	margin-top: 15px;
  	display: inline-flex;
  	vertical-align: middle;
 
  }
  
  #menu ul li a 	{
- 	font-size: 30px;
+ 	font-size: 28px;
  	font-family: Century Gothic;
  	color: #f5f5f5;
  	text-decoration: none;
@@ -62,29 +82,34 @@ header{
 
  }
  #home {
- 	height: 800px;
+ 	height: 700px;
  	background-color: #dedede;
+ 	background: url(../images/bg_home3.png) left no-repeat fixed;
  	border-color: black;
  	
  }
 #sobre {
- 	height: 600px;
- 	background-color: #2e51a7; 	
+ 	background-color: #3763cd; 	
+ 	padding-bottom: 50px;
+ 	/*border-top: 3px solid #333;*/
  }
-
-#portifolio {
- 	height: 600px;
+ #portifolio { 	
  	background-color: #dedede;
- 	
+ 	padding-bottom: 50px;
+ 		
  	
  }
 #blog {
- 	height: 350px;
- 	background-color:#ef770d;
+ 	background-color:#faaa10;
+ 	padding-bottom: 50px;
  }
 #contato {
- 	height: 700px;
  	background-color: #333333;
+ 	padding-bottom: 50px;
+ }
+ .anchor {
+ 	position: relative;
+ 	top: -102px;
  }
 
 .titulo {
@@ -96,13 +121,60 @@ header{
  	padding-top: 25px;
  	padding-bottom: 30px;
  }
+ .soon {
+ 	width: 350px;
+ 	margin: 0 auto;
+ 	font-size: 60px;
+ 	font-family: "Ikaros";
+ 	text-align: center;
+ 	color: #dedede;
+ 	border: 2px solid #dedede;
+}
+.soon:hover {
+	background-color: #dedede;
+	color:#faaa10;
+
+
+}
 #sobre .titulo {
 	color: #f8e43d;
+}
+
+.perfil-sobre {
+	background-color: #f8e43d; 
+	width: 82%;
+	border: 3px solid #f8e43d;
+	border-radius: 1%;
+}
+h3 {
+	font-size: 35px;
+	color: #f8e43d;
+	font-family: "Open Sans";
+	margin-bottom: 10px;
+	margin-left: 5px;
+}
+.text {
+	width: 90%;
+	color:#dedede;
+	font-size: 16px;
+	font-family: "Open Sans";
+	text-align: justify;
 }
 #contato .titulo {
 	color: #dedede;
 }
+.send-me {
+	width: 600px;
+	height: 300px;
+	margin: 0 auto;
+}
+.btn-send {
+	width: 200px;
+	height: 35px;
+	background-color: #dedede;
+	margin: 10px 0 0 0;
 
+}
 
 .btblog {
  	width: 350px;
@@ -122,9 +194,146 @@ header{
  	
  }
 
- #centralizar {
+ .centralizar {
  	text-align: center;
  	
  }
 
- 
+ .hello { /* TESTANDO TEXTO HOME*/
+	position: absolute;
+	font-family: "Debby";
+	top: 130px;
+	right: 200px;
+	font-size: 280px;
+	color: #f8e43d;
+ }
+ .hello1 { /* TESTANDO TEXTO HOME*/
+	position: absolute;
+	font-family: "Debby";
+	top: 135px;
+	right: 205px;
+	font-size: 280px;
+	color: #3c3c3c;
+ }
+ #home .subtitle {
+
+ 	position: absolute;
+ 	font-family: "Ikaros";
+ 	font-size: 90px;
+ 	right: 90px;
+ 	top: 450px;
+ 	color: #3c3c3c;
+
+ }
+  #home .subtitle1 {
+
+ 	position: absolute;
+ 	font-family: "Ikaros";
+ 	font-size: 90px;
+ 	right: 95px;
+ 	top: 455px;
+ 	color: #f8e43d;
+
+ }
+
+ .board {
+ 	width: 100%;
+ 	margin: 20px 20px;
+ 	background-color: #333;
+ 	border: 5px solid #333; 
+ }
+
+
+.social-medias img {
+	margin: 12px;
+}
+
+
+
+
+ @media(max-width: 975px) {
+ 	header {
+ 		height: 97px;
+ 	}
+ 	#menu ul li a {
+ 		font-size: 24px;
+ 	}
+ 	#logo {
+	width: 300px;
+	height: 70px;
+	font-size: 40px;
+	}
+	.text {
+	width: 70%;
+	color:#dedede;
+	font-size: 14px;
+	font-family: "Open Sans";
+	text-align: justify;
+	}
+	.perfil-sobre {
+		background-color: #f8e43d; 
+		width: 60%;
+		border: 3px solid #f8e43d;
+		border-radius: 1%;
+	}
+ }
+
+@media(max-width: 840px) {
+
+	header {
+	height: 80px;
+	border-bottom: 5px solid #3c3c3c;
+	}
+ 	#menu ul li a {
+ 		font-size: 20px;
+ 	}
+ 	#logo {
+	width: 200px;
+	height: 50px;
+	font-size: 30px;
+	}
+	.hello { /* TESTANDO TEXTO HOME*/
+	position: absolute;
+	font-family: "Debby";
+	top: 130px;
+	right: 200px;
+	font-size: 250px;
+	color: #f8e43d;
+ }
+ .hello1 { /* TESTANDO TEXTO HOME*/
+	position: absolute;
+	font-family: "Debby";
+	top: 135px;
+	right: 205px;
+	font-size: 250px;
+	color: #3c3c3c;
+ }
+ #home .subtitle {
+
+ 	position: absolute;
+ 	font-family: "Ikaros";
+ 	font-size: 60px;
+ 	right: 90px;
+ 	top: 450px;
+ 	color: #3c3c3c;
+
+ }
+  #home .subtitle1 {
+
+ 	position: absolute;
+ 	font-family: "Ikaros";
+ 	font-size: 60px;
+ 	right: 95px;
+ 	top: 455px;
+ 	color: #f8e43d;
+
+ }
+
+ }
+@media(max-width: 990px) {
+	.board {
+ 	width: 70%;
+ 	margin: 20px auto;
+ 	background-color: #333; 
+ }
+}

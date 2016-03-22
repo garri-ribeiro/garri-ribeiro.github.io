@@ -38,7 +38,7 @@ a { text-decoration:none;}
 header {
 	position: fixed;
 	width: 100%;
-	height: 102px;
+	padding-bottom: 3px;
 	z-index: 1;
 	background-color: #2e51a7;
 	border-bottom: 5px solid black;
@@ -215,7 +215,7 @@ h3 {
 	font-size: 280px;
 	color: #3c3c3c;
  }
- #home .subtitle {
+.subtitle {
 
  	position: absolute;
  	font-family: "Ikaros";
@@ -225,7 +225,7 @@ h3 {
  	color: #3c3c3c;
 
  }
-  #home .subtitle1 {
+.subtitle1 {
 
  	position: absolute;
  	font-family: "Ikaros";
@@ -242,6 +242,11 @@ h3 {
  	background-color: #333;
  	border: 5px solid #333; 
  }
+ .board img:hover {
+ 	opacity: 0.8;
+    filter:alpha(opacity=40);
+}
+ }
 
 
 .social-medias img {
@@ -249,11 +254,18 @@ h3 {
 }
 
 
+@media(max-width: 990px) {
+	.board {
+ 	width: 70%;
+ 	margin: 20px auto;
+ 	background-color: #333; 
+ 	}
+}
 
 
  @media(max-width: 975px) {
  	header {
- 		height: 97px;
+ 		
  	}
  	#menu ul li a {
  		font-size: 24px;
@@ -281,7 +293,7 @@ h3 {
 @media(max-width: 840px) {
 
 	header {
-	height: 80px;
+	
 	border-bottom: 5px solid #3c3c3c;
 	}
  	#menu ul li a {
@@ -292,48 +304,29 @@ h3 {
 	height: 50px;
 	font-size: 30px;
 	}
-	.hello { /* TESTANDO TEXTO HOME*/
-	position: absolute;
-	font-family: "Debby";
-	top: 130px;
-	right: 200px;
+	.hello, .hello1 { /* TESTANDO TEXTO HOME*/
+	text-align: center;
 	font-size: 250px;
-	color: #f8e43d;
+	}
+	#home .subtitle, #home .subtitle1 {
+		text-align: center;
+	 	font-size: 60px;
+	}
  }
- .hello1 { /* TESTANDO TEXTO HOME*/
-	position: absolute;
-	font-family: "Debby";
-	top: 135px;
-	right: 205px;
-	font-size: 250px;
-	color: #3c3c3c;
+ @media(max-width: 480px) {
+	header { position: relative; }
+	#menu ul li { display:block;}
+	#logo {margin: 0 auto; padding:0px;}
+	.risco { width: 0px; height: 0px; }
+ 	#home { height: 400px;}
+ 	.titulo { font-size: 60px; }
+ 	.text { font-size: 12px; margin: 0 auto; }
+ 	h3 { font-size: 24px; margin-left: 0px; text-align: center;}
+ 	.perfil-sobre { margin: 0 auto; }
+ 	.hello, .hello1 { text-align: center;	right: 0px;	font-size: 160px; top: 300px;	} 
+ 	.hello1 { top: 305px; }
+	#home .subtitle, #home .subtitle1 {	text-align: center;	right: 0px;	font-size: 40px; top: 500px;}
+	#home .subtitle1 {top: 505px;}
+	.social-medias img { width: 90px; }
+	.soon { width: 200px; font-size: 45px; }
  }
- #home .subtitle {
-
- 	position: absolute;
- 	font-family: "Ikaros";
- 	font-size: 60px;
- 	right: 90px;
- 	top: 450px;
- 	color: #3c3c3c;
-
- }
-  #home .subtitle1 {
-
- 	position: absolute;
- 	font-family: "Ikaros";
- 	font-size: 60px;
- 	right: 95px;
- 	top: 455px;
- 	color: #f8e43d;
-
- }
-
- }
-@media(max-width: 990px) {
-	.board {
- 	width: 70%;
- 	margin: 20px auto;
- 	background-color: #333; 
- }
-}
